@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="horizontal"
+    android:alpha="0.8"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/day"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".10"
+        android:text="Tr" ></TextView>
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".15"
+        android:text="23'" ></TextView>
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".20" ></ImageView>
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".28"
+        android:text="Partly cloudy" ></TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:padding="2dp"
+            android:text="Precipitation:"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#33CC33" ></TextView>
+
+        <TextView
+            android:id="@+id/prec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:text="90%" ></TextView>
+    </LinearLayout>
+
+</LinearLayout>

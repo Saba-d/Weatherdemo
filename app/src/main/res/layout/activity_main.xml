@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:textColor="#0000" ></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:alpha="0.8"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".65"
+            android:hint="City / Zipcode "
+            android:textSize="26sp" ></EditText>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".35"
+            android:background="#3daaf2"
+            android:text="Search"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp" ></Button>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:textColor="#0000" ></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.8"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".65"
+            android:text="23'"
+            android:textColor="#000000"
+            android:textSize="80sp" ></TextView>
+
+        <TextView
+            android:id="@+id/cel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".13"
+            android:text="C"
+            android:textColor="#000000"
+            android:textSize="50sp" ></TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".09"
+            android:text="|"
+            android:textSize="60sp" ></TextView>
+
+        <TextView
+            android:id="@+id/far"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".13"
+            android:text="F"
+            android:textColor="#000000"
+            android:textSize="50sp" ></TextView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+
+        android:textColor="#0000" ></TextView>
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.8"
+        android:background="#FFFFFF"
+        android:text="Description"
+        android:textColor="#000000"
+        android:textSize="50sp" ></TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:textColor="#0000" ></TextView>
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:textColor="#0000" ></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.8"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:textColor="#000000">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".65"
+            android:text="Precipitation:"
+            android:textColor="#000000"
+            android:textSize="40sp" ></TextView>
+
+        <TextView
+            android:id="@+id/prec"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".35"
+            android:paddingLeft="10dp"
+            android:text="90%"
+            android:textColor="#000000"
+            android:textSize="50sp"></TextView>
+    </LinearLayout>
+</LinearLayout>

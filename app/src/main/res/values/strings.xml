@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Weatherdemo</string>
+
+    <string name="toggle_turn_on">C</string>
+    <string name="toggle_turn_off">F</string>
+    <string name="btn_display">Display</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_toggle_button">ToggleButton</string>
+    <string name="title_activity_five_day">FiveDay</string>
+    <string name="title_activity_custom_list_adapter">CustomListAdapter</string>
+</resources>
