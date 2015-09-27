@@ -53,6 +53,8 @@ public class FiveDay extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_five_day);
+        TextView cel = (TextView) findViewById(R.id.cel);
+        TextView far = (TextView) findViewById(R.id.far);
 
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
@@ -67,9 +69,14 @@ public class FiveDay extends Activity {
                 sc1 = fetchdesc(value);
                 descr = sc1.toArray(new String[sc1.size()]);
 
-                List<String> far = new ArrayList<String>();
+
+
+
+
+
+                /*List<String> far = new ArrayList<String>();
                 far = fetchtempF(value);
-                descr = far.toArray(new String[far.size()]);
+                descr = far.toArray(new String[far.size()]);*/
 
 
                 List<String> sc2 = new ArrayList<String>();
