@@ -2,6 +2,7 @@ package app.saba.weatherdemo;
 
 import android.app.Activity;
 import android.app.ListActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -15,13 +16,15 @@ public class FiveDay extends Activity{
 
     ListView list;
     String[] itemname ={
-            "   Safari",
+            "Safari",
             "Camera",
             "Global",
             "FireFox",
             "UC Browser",
 
     };
+
+
 
     Integer[] imgid={
             R.drawable.pic1,
@@ -38,6 +41,14 @@ public class FiveDay extends Activity{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_five_day);
 
+        Bundle extras = getIntent().getExtras();
+        if (extras != null) {
+            String value = extras.getString("city");
+        }
+
+
+
+
         CustomListAdapter adapter=new CustomListAdapter(this, itemname, imgid);
         list=(ListView)findViewById(R.id.list);
         list.setAdapter(adapter);
@@ -53,5 +64,10 @@ public class FiveDay extends Activity{
 
             }
         });
+    }
+    public void back(View v)
+    {
+        Intent i = new Intent(this, MainActivity.class);
+        startActivity(i);
     }
 }

@@ -19,6 +19,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight=".65"
+            android:id="@+id/thishere"
             android:hint="City / Zipcode "
             android:textSize="26sp" ></EditText>
 
@@ -29,6 +30,7 @@
             android:background="#3daaf2"
             android:text="Search"
             android:textColor="#FFFFFF"
+            android:onClick="getWeather"
             android:textSize="26sp" ></Button>
     </LinearLayout>
 
@@ -102,6 +104,7 @@
     <ImageView
         android:id="@+id/icon"
         android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"></ImageView>
 
     <TextView
@@ -123,7 +126,7 @@
             android:layout_weight=".65"
             android:text="Precipitation:"
             android:textColor="#000000"
-            android:textSize="40sp" ></TextView>
+            android:textSize="35sp" ></TextView>
 
         <TextView
             android:id="@+id/prec"
