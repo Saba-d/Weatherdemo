@@ -14,7 +14,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".10"
-                    android:text="b"
+
                     android:onClick="back"
                     android:textColor="#000000"
                     android:textSize="50sp"></TextView>
